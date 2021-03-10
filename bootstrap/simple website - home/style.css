@@ -1,4 +1,27 @@
+body {
+  padding-bottom: 0;
+}
+
 .carousel-item img {
   object-fit: cover;
   object-position: 0 45%;
+  filter:brightness(50%);
+}
+
+.col-md-6 .card img {
+  object-fit: cover;
+  height: 15rem;
+  width: 100%;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 100px;
 }
