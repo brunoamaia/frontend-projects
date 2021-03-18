@@ -1,0 +1,99 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 400px;
+  width: 500px;
+  cursor: pointer;
+  color: white;
+
+  background-image: url('./src/img/pexels-simon-berger.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(0.6);
+
+  transition: 0.3s;
+}
+
+.card-wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  text-align: center;
+}
+
+.card-wrapper::before {
+  position: absolute;
+  display: block;
+  content: '';
+
+  height: 100px;
+  width: 100px;
+  border: 1px solid white;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.card-wrapper h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0;
+  transition: 0.3s;
+}
+
+.card-wrapper p {
+  font-size: 0;
+  visibility: hidden;
+  opacity: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  filter: unset;
+}
+
+.card:hover > .card-wrapper::before {
+  height: 300px;
+  width: 400px;
+  opacity: 1;
+}
+
+.card:hover > .card-wrapper p {
+  opacity: 1;
+  visibility: visible;
+  font-size: 14px;
+}
+
+.back-home {
+  position: absolute;
+  top: 10px;
+
+  text-decoration: none;
+  font-size: 20px;
+  color: #00FF99;
+  background-color: #949494;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
