@@ -1,0 +1,33 @@
+section > div {
+  min-height: 45vh;
+}
+
+h2 {
+  font-size: 2.5rem;
+  padding: 0 0 0.7rem 0;
+  color: var(--bg-contrast);
+}
+
+.container-list {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1400px;
+}
+
+.projects {
+  margin: 0 auto 20px;
+  max-width: 960px;
+  padding-left: 30px;
+  width: 95%;
+  color: var(--text-main);
+  font: 1.3em Belgrano;
+}
+
+.projects li {
+  text-align: left;
+}
+
+.list a {
+  color: var(--text-main);
+  font: 0.8em Belgrano;
+}
