@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  background-color: #949494;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+footer a {
+  color: #00FF99;
+  font-size: 16px;
+}
+.back-home {
+  position: absolute;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+.back-home a {
+  margin: 0 auto;
+  color: #00FF99;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #949494;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+body {
+  background: #000;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+}
+
+span {
+  position: absolute;
+  pointer-events: none;
+  background-color: #FFF;
+  animation: animate 5s linear infinite;
+  z-index: -1;
+}
+
+@keyframes animate {
+  0% {transform: scale(0) translateY(0) rotate(0deg); opacity: 0;}
+  10% {opacity: 1;}
+  90% { opacity: 1;}
+  100% {transform: scale(1) translateY(-500%) rotate(360deg); opacity: 0;}
+}
+
+
+
+.control {
+  position: absolute;
+  top: 70px;
+  color: #FFF;
+  width: 100vw;
+}
+
+.control .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  background-color: #949494;
+  border-radius: 20px;
+  width: min-content;
+  color: #00FF99;
+  font-size: 22px;
+}
+
+.formacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.formacts > div {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  padding: 5px;
+  margin: 10px;
+}
+
+.animated {
+  animation: onclick 1.5s linear;
+}
+@keyframes onclick {
+  0% {transform: scale(1) rotate(0deg); opacity: 1;}
+  20% {transform: scale(0.5) rotate(72deg); opacity: 0.5;}
+  80% {transform: scale(0.5) rotate(288deg); opacity: 0.5;}
+  100% {transform: scale(1) rotate(360deg); opacity: 1;}
+}
+
+
+.formacts > div:first-child {
+  font-size: 18px;
+  width: min-content;
+  background-color: inherit;
+  margin-top: -5px;
+}
+
+.arrow {
+  background-color: #00FF99;
+  clip-path: polygon(0 25%, 60% 25%, 60% 0%, 100% 50%, 60% 100%, 60% 75%, 0 75%);
+}
+
+.ex {
+  background-color: #00FF99;
+  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.frame {
+  display: flex;
+  background-color: #00FF99;
+}
+.frame::after {
+  content: "";
+  font-size: 0;
+  background-color: #949494;
+  padding: 5px;
+}
+
+.rectangle {
+  background-color: #00FF99;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+}
+.star {
+  background-color: #00FF99;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.sum {
+  background-color: #00FF99;
+  clip-path: polygon(0 25%, 25% 25%, 25% 0, 75% 0, 75% 25%, 100% 25%, 100% 75%, 75% 75%, 75% 100%, 25% 100%, 25% 75%, 0 75%);
+}
